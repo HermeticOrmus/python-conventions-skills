@@ -1,0 +1,53 @@
+---
+description: Modern Python (3.11+) conventions — type discipline, pathlib, async patterns, structlog, ruff + mypy strict.
+globs:
+  - "**/*.py"
+  - "**/pyproject.toml"
+  - "**/requirements*.txt"
+alwaysApply: false
+---
+
+# Python conventions (3.11+)
+
+## Type discipline
+
+- Type hints on every function, attribute, return
+- `from __future__ import annotations` at top
+- Pydantic v2 for I/O models
+- TypedDict for internal dict shapes
+- Literal for string-literal enums
+
+## Stdlib preferences
+
+- pathlib.Path over os.path
+- dataclasses over manual __init__
+- subprocess.run over os.system (with list args, not shell strings)
+- f-strings except in logging (lazy formatting)
+- match statements for tagged-union dispatch
+
+## Async
+
+- async def end-to-end (httpx, not requests)
+- TaskGroup for structured concurrency (3.11+)
+- Never time.sleep in async code
+
+## Logging
+
+- structlog or stdlib with structured extras
+- No print() in library code
+- Lazy formatting: `logger.info("user %s", id)` not f-string
+
+## Tooling
+
+- ruff (lint + format)
+- mypy --strict
+- pytest with fixtures
+- uv over pip
+
+## Banned
+
+- Bare except
+- Mutable default arguments
+- `from foo import *`
+- eval/exec on user input
+- Stringly-typed return contracts
