@@ -1,6 +1,23 @@
-# Python Conventions Skills
+<p align="center">
+  <img src="https://ormus.solutions/mascot/chain_braces_to_swan.gif" alt="Python Conventions Skills" width="128" style="image-rendering: pixelated;" />
+</p>
 
-> A single `CLAUDE.md` for modern Python (3.11+) conventions. Type discipline, pathlib over os.path, async patterns, structlog, ruff + mypy strict + pytest defaults. Drop into any Python project.
+<h1 align="center">Python Conventions Skills</h1>
+
+<p align="center">
+  <em>A CLAUDE.md for modern Python (3.11+) conventions — type discipline, pathlib over os.path, async patterns, structlog, ruff + mypy strict + pytest defaults. Drop into any Python project.</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/HermeticOrmus/python-conventions-skills/stargazers"><img src="https://img.shields.io/github/stars/HermeticOrmus/python-conventions-skills?style=flat-square&color=aa8142" alt="Stars" /></a>
+  <a href="https://github.com/HermeticOrmus/python-conventions-skills/blob/main/LICENSE"><img src="https://img.shields.io/github/license/HermeticOrmus/python-conventions-skills?style=flat-square&color=aa8142" alt="License" /></a>
+  <a href="https://github.com/HermeticOrmus/python-conventions-skills/commits"><img src="https://img.shields.io/github/last-commit/HermeticOrmus/python-conventions-skills?style=flat-square&color=aa8142" alt="Last Commit" /></a>
+  <img src="https://img.shields.io/badge/Claude_Code-aa8142?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Code" />
+</p>
+
+---
+
+> **A single `CLAUDE.md` for modern Python (3.11+) conventions. Type discipline, pathlib over os.path, async patterns, structlog, ruff + mypy strict + pytest defaults. Drop into any Python project.**
 
 ## What it covers
 
